@@ -75,7 +75,7 @@
 </div>
 
 <!-- Job History details -->
-<div class='history-details'>
+<div class='history-details' style="flex: 1 1">
 	<!-- Previous run list -->
 	<div class="prev-run-list-container" style="min-width: 275px; height: 75vh">
 		<table *ngIf="_showPreviousRuns === true">
@@ -92,7 +92,7 @@
 		<div #table class="step-table prev-run-list" style="position: relative; height: 100%; width: 100%"></div>
 	</div>
 	<!-- Job Steps -->
-	<div class="job-steps" id="job-steps">
+	<div class="job-steps" id="job-steps" style="display: flex; flex-direction: column">
 		<h1 class="job-heading">
 			{{agentJobHistoryInfo?.runDate}}
 		</h1>
@@ -154,9 +154,7 @@
 				</td>
 			</tr>
 		</table>
-		<div #jobsteps style="height: 100%">
-			<jobstepsview-component *ngIf="showSteps === true"></jobstepsview-component>
-		</div>
+		<jobstepsview-component *ngIf="showSteps === true" style="height: 100%; display:flex; flex-direction: column"></jobstepsview-component>
 		<h3 *ngIf="showSteps === false">No Steps Available</h3>
 	</div>
 </div>
