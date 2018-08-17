@@ -66,7 +66,6 @@ export class JobStepsViewComponent extends JobManagementView  implements OnInit,
 				}, { verticalScrollMode: ScrollbarVisibility.Visible });
 				this._register(attachListStyler(this._tree, this.themeService));
 			}
-
 			this._tree.setInput(new JobStepsViewModel());
 			$('jobstepsview-component .steps-tree .monaco-tree').attr('tabIndex', '-1');
 			$('jobstepsview-component .steps-tree .monaco-tree-row').attr('tabIndex', '0');
@@ -80,7 +79,6 @@ export class JobStepsViewComponent extends JobManagementView  implements OnInit,
 			filter: this._treeFilter,
 			renderer: this._treeRenderer
 		}, {verticalScrollMode: ScrollbarVisibility.Visible});
-		this._tree.layout(250);
 		this._register(attachListStyler(this._tree, this.themeService));
 	}
 

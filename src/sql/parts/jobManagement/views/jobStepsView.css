@@ -80,3 +80,7 @@
 jobstepsview-component {
 	padding-top: 10px;
 }
+
+.steps-tree {
+	height: calc(100% - 62px);
+}

@@ -177,9 +177,8 @@ table.step-list tr.step-row td {
 	display: block;
 	border-left: 3px solid #f4f4f4;
 	padding-left: 10px;
-	height: 100%;
+	height: 75vh;
 	width: 90%;
-	overflow-y: scroll;
 }
 
 .history-details > .job-steps > .step-list {
